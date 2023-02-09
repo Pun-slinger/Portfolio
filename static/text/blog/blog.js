@@ -16,7 +16,7 @@ async function someFunction() {
     for (var i = 1; i < 3; i++) {
         try {
             console.log(__dirname);
-            let data = await fs.promises.readFile(__dirname + '\\blog'+i+'.html', 'utf-8');
+            let data = await fs.promises.readFile(__dirname + '/blog'+i+'.html', 'utf-8');
             dataArray.push(data);
         } catch(e) {
             // handle error
