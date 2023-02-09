@@ -1,0 +1,51 @@
+<div id="blog-main" class="mx-5">
+
+    <div id="blog-table-div" class="table-responsive mr-5">
+        <table id="blog-table" class="table-sm table-hover rounded">
+            <tbody>
+                {{#each blogs}}
+                <tr onclick="displayBlog({{json this}})">
+                    <td>Entry #{{@index}}: {{title}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="blog-sub" class=" p-3 rounded table-responsive">
+        <h1 id="blog-title">Sample Title</h1>
+        <h5 id="blog-date">Sample Date</h5>
+        <hr>
+        <div id="blog-content"></div>
+    </div>
+</div>
+
+<script>
+    function loadFunctions() {
+        clickOnRow(0);
+    }
+</script>
+
+<script>
+    function displayBlog(blog) {
+        document.getElementById("blog-sub").style.visibility = "visible";
+
+        document.getElementById("blog-title").innerHTML = blog.title;
+
+        document.getElementById("blog-date").innerHTML = blog.date;
+
+        document.getElementById("blog-content").innerHTML = blog.content;
+    }
+</script>
+
+<script>
+    function clickOnRow(rowNum) {
+        var table, rows, i, singleRow;
+        table = document.getElementById("blog-table");
+
+        rows = table.rows;
+
+        rows[rowNum].click();
+    }
+</script>
