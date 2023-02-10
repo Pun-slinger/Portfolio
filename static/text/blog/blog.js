@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var blogs = [
     {title: "Web Usability",
-    date: "8th February 2023",
+    date: "9th February 2023",
     content: ""},
 
     {title: "Second Blog Post",
