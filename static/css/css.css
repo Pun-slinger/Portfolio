@@ -1,5 +1,5 @@
 body {
-    background-image: url("/img/background/background.jpg");
+    background-image: url("../img/background/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -103,6 +103,18 @@ th, td, #blog-table-div, #blog-sub{
 td{
     font-size: 23px;
     text-align: center;
+}
+
+img#img-rot {
+    content: url("../img/others/rule_of_third.JPG");
+}
+
+img#img-distract {
+    content: url("../img/others/Distracting.JPG");
+}
+
+img#img-zoom {
+    content: url("../img/others/Zoom.JPG");
 }
 
 @media screen and (min-width: 200px) {}
