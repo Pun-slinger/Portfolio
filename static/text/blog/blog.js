@@ -5,8 +5,8 @@ var blogs = [
     date: "9th February 2023",
     content: ""},
 
-    {title: "Second Blog Post",
-    date: "10th February 2023",
+    {title: "Images in creating Multimedia",
+    date: "16th February 2023",
     content: ""},
 ]
 
