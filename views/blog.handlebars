@@ -38,6 +38,8 @@
         document.getElementById("blog-date").innerHTML = blog.date;
 
         document.getElementById("blog-content").innerHTML = blog.content;
+
+        setVolume(0.05);
     }
 </script>
 
@@ -49,5 +51,12 @@
         rows = table.rows;
 
         rows[rowNum].click();
+    }
+</script>
+
+<script>
+    function setVolume(volume) {
+        var audio = document.getElementById("blog-audio");
+        audio.volume = volume;
     }
 </script>
