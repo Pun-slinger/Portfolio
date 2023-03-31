@@ -22,6 +22,11 @@ var blogs = [
         date: "14th March 2023",
         content: ""
     },
+    {
+        title: "Film Making in creating Multimedia",
+        date: "28th March 2023",
+        content: ""
+    },
 ]
 
 var dataArray = [];
